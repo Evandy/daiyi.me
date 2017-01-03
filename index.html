@@ -18,7 +18,7 @@
   ga('create', 'UA-59104749-2', 'auto');
   ga('send', 'pageview');
 
-</script>
+  </script>
   <!-- End Google Analytics JS -->
 
   <!-- Start Heap Analytics JS -->
@@ -36,14 +36,32 @@
   </script>
   <!-- end Mixpanel -->
 
-  <!-- Test Mixpanel Event -->
+  <!-- Start Mixpanel Test Event -->
   <script type="text/javascript">
     mixpanel.track("Video played", {
         "Video length": 213,
         "id": "hY7gQr0"
     });
   </script>
-  <!-- Test Mixpanel Event -->
+  <!-- End Mixpanel Test Event -->
+
+  <!-- Start GrowingIO JS -->
+  <script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', '9ab1a3e7f95c0e58']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
+  <!-- End GrowingIO JS -->
 
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
