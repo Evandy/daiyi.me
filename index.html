@@ -1,213 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Dy Test</title>
-
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MM8GWK');</script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Nav -->
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo" onclick="ga('send', 'event', 'homePage', 'nav', 'logo');">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="#">Navbar Link</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-    <!-- End Nav -->
-
-    <h1 class="header center teal-text text-lighten-2">Dy Test Page</h1>
-    <h5 class="header center teal-text text-lighten-2">A Page for Testing Analytics Tool</h5>
-    <!-- From test -->
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Disabled</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            This is an inline input field:
-            <div class="input-field inline">
-              <input id="email" type="email" class="validate">
-              <label for="email" data-error="wrong" data-success="right">Email</label>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>  
-
-    <!-- Button Click Test -->
-    <div class="container">
-      <div class="section">
-        <div class="row">
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-              <h5 class="center">Google Analytics</h5>
-              <br>
-              <a class="waves-effect waves-light btn-large" onclick="ga('send', 'event', 'homePage', 'googleAnalytics', 'button');">Test Button Click Track</a>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text"><i class="material-icons">launch</i></h2>
-              <h5 class="center">Heap Analytics</h5>
-              <br>
-              <a class="waves-effect waves-light btn-large" onclick="ga('send', 'event', 'homePage', 'heapAnalytics', 'button');">Test Button Click Track</a>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text"><i class="material-icons">perm_media</i></h2>
-              <h5 class="center">Growing IO</h5>
-              <br>
-              <a class="waves-effect waves-light btn-large" onclick="ga('send', 'event', 'homePage', 'growingIO', 'button');">Test Button Click Track</a>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text"><i class="material-icons">info_outline</i></h2>
-              <h5 class="center">Mixpanel Analytics</h5>
-              <br>
-              <a class="waves-effect waves-light btn-large" onclick="ga('send', 'event', 'homePage', 'Mixpanel', 'button');">Test Button Click Track</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>This my heart for you.</title>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+    @import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
+    body {
+      background-color: #ccc;
+    }
+    .container {
+      width: 512px;
+      height: 380px;
+      margin: auto;
+      margin-top: 0;
+    }
+    .heart {
+      z-index: 1;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 50%;
+      margin-top: -75px;
+      left: 50%;
+      margin-left: -75px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image:url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjE3M3B4IiBoZWlnaHQ9IjE1OHB4IiB2aWV3Qm94PSIwIDAgMTczIDE1OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTczIDE1OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjRUY0NjU3IiBkPSJNMTU3LjMzMSwxNS41MDRjLTE5LjU1OS0xOS41NTktNTEuMjcxLTE5LjU1OS03MC44MzEsMGMtMTkuNTU5LTE5LjU1OS01MS4yNzEtMTkuNTU5LTcwLjgzMSwwDQoJYy0xOS41NTksMTkuNTU5LTE5LjU1OSw1MS4yNzEsMCw3MC44MzFsNzAuODMxLDcwLjgzbDcwLjgzMS03MC44M0MxNzYuODksNjYuNzc1LDE3Ni44OSwzNS4wNjQsMTU3LjMzMSwxNS41MDR6Ii8+DQo8L3N2Zz4=");
+    }
+    .hometown {
+      font-family:'Inconsolata', sans-serif;
+      font-weight: bold;
+      font-size: 2.0em;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      width: 512px;
+      height: 512px;
+      color: #FFF;
+    }
+    #top {
+      width: 200px;
+      margin: auto;
+      position: relative;
+    }
+    #top span {
+      height: 350px;
+      position: absolute;
+      width: 20px;
+      left: 50%;
+      margin-left: -10px;
+      top: 110px;
+    }
+    .char1 {
+      transform: rotate(-36deg);
+    }
+    .char2 {
+      transform: rotate(-24deg);
+    }
+    .char3 {
+      transform: rotate(-12deg);
+    }
+    .char4 {
+      transform: rotate(0deg);
+    }
+    .char5 {
+      transform: rotate(12deg);
+    }
+    .char6 {
+      transform: rotate(24deg);
+    }
+    .char7 {
+      transform: rotate(36deg);
+    }
+    #bottom span {
+      height: 350px;
+      line-height: 700px;
+      position: absolute;
+      width: 20px;
+      left: 50%;
+      margin-left: -10px;
+      top: 10px;
+    }
+    #bottom .char1 {
+      transform: rotate(36deg);
+    }
+    #bottom .char2 {
+      transform: rotate(27deg);
+    }
+    #bottom .char3 {
+      transform: rotate(18deg);
+    }
+    #bottom .char4 {
+      transform: rotate(9deg);
+    }
+    #bottom .char5 {
+      transform: rotate(0deg);
+    }
+    #bottom .char6 {
+      transform: rotate(-9deg);
+    }
+    #bottom .char7 {
+      transform: rotate(-18deg);
+    }
+    #bottom .char8 {
+      transform: rotate(-27deg);
+    }
+    #bottom .char9 {
+      transform: rotate(-36deg);
+    }
+    .city {
+      font-family:"Hammersmith One";
+      display: inline-block;
+      width: 100%;
+      height: 300px;
+      padding-top: 45px;
+      text-align: center;
+      font-size: 2.5em;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      margin-top: -110px;
+    }
+    .heart {
+      animation: HEARTBEAT 2.5s infinite;
+    }
+    #top span {
+      animation: BOUNCE 2.5s infinite;
+    }
+    @keyframes HEARTBEAT {
+      0% {
+        transform: scale(1);
+      }
+      5% {
+        transform: scale(1.3);
+      }
+      10% {
+        transform: scale(1.1);
+      }
+      15% {
+        transform: scale(1.5);
+      }
+      50% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes BOUNCE {
+      0% {
+        top: 110px;
+      }
+      10% {
+        top: 80px;
+      }
+      15% {
+        top: 85px;
+      }
+      20% {
+        top: 70px;
+      }
+      75% {
+        top: 110px;
+      }
+      100% {
+        top: 110px;
+      }
+    }
+</style>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+  <div class="container bg">
+  <div class="hometown">
+    <div class="heart">
     </div>
-    <!-- End Button Click Test -->
-
-    <!-- Footer -->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Dy Test Page</h5>
-            <p class="grey-text text-lighten-4">This is page footer of Dy Test Page</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Google Analytics</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Heap Analytics</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Growing IO</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Mixpanel Analytics</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container center">
-          Power by Materialize
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-59104749-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
-
-    <!-- Mixpanel -->
-    <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-      0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-      for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-    mixpanel.init("13be12434b6e38f6830894e653548b24");
-    </script>
-    <!-- End Mixpanel-->
-
-    <!-- Mixpanel Test Event -->
-    <script type="text/javascript">
-      mixpanel.track("Video played", {
-          "Video length": 213,
-          "id": "hY7gQr0"
-      });
-    </script>
-    <!-- End Mixpanel Test Event -->
-
-    <!-- GrowingIO -->
-    <script type='text/javascript'>
-        var _vds = _vds || [];
-        window._vds = _vds;
-        (function(){
-          _vds.push(['setAccountId', '9ab1a3e7f95c0e58']);
-          (function() {
-            var vds = document.createElement('script');
-            vds.type='text/javascript';
-            vds.async = true;
-            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(vds, s);
-          })();
-        })();
-    </script>
-    <!-- End GrowingIO -->
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM8GWK"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-  </body>
+    <div id="top">Myheart</div>
+    <div class="city">I LOVE YOU</div>
+    <div id="bottom">Lap po po</div>
+  </div>
+</div>
+  <script src='js/jquery.js'></script>
+  <script src='js/jquery.lettering.js'></script>
+  <script src="js/index.js"></script>
+</body>
 </html>
